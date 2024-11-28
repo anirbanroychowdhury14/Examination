@@ -55,7 +55,7 @@
 	if(!isset($_SESSION['login']))
 	header("Location: Adminlogin.php");
 	echo "<div class=\"login\">";
-	$q="Select * from student";
+	$q="Select * from student where login='yes'";
 	$result=mysqli_query($connection,$q);
 	echo "<table border=\"1\" style=\"border-collapse:collapse;\">";
 	echo "<tr>
